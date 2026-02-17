@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Nexus | Cyber Landing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="scanline"></div>
+    <div class="overlay"></div>
+
+    <div id="loader">
+        <div class="scanner"></div>
+        <div class="loader-text">SYSTEM_INITIALIZATION...</div>
+    </div>
+
+    <header>
+        <div class="logo" data-text="NEXUS_PROJECTS">NEXUS_PROJECTS</div>
+        <nav>
+            <ul>
+                <li><a href="#projects" class="cyber-link">Projects</a></li>
+                <li><a href="#about" class="cyber-link">About</a></li>
+                <li><a href="#contact" class="cyber-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="glitch neon-blink" data-text="SYSTEM_OFFLINE">SYSTEM_OFFLINE</h1>
+            <p class="subtitle typing-effect" id="typing-text"></p>
+        </section>
+
+        <section id="projects" class="projects-container">
+            <h2 class="section-title">Accessing Project Database...</h2>
+            <div class="grid" id="project-grid">
+                <!-- Projects will be injected here by JS -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-container">
+            <h2 class="section-title">Establish Connection...</h2>
+            <div class="contact-wrapper">
+                <form id="contact-form" class="cyber-form">
+                    <div class="form-group">
+                        <label for="name" class="cyber-label">Identify Identifyer</label>
+                        <input type="text" id="name" name="name" class="cyber-input" required placeholder="ENTER_NAME">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="cyber-label">Comms Link</label>
+                        <input type="email" id="email" name="email" class="cyber-input" required
+                            placeholder="ENTER_EMAIL">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="cyber-label">Transmission Data</label>
+                        <textarea id="message" name="message" class="cyber-textarea" required
+                            placeholder="ENTER_MESSAGE_DATA..." rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="cyber-submit-btn">
+                        <span class="btn-text">INITIATE_SEND</span>
+                        <div class="btn-glitch"></div>
+                    </button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 SYSTEM_SECURE. All rights reserved.</p>
+            <div class="socials">
+                <a href="#" class="cyber-icon">GH</a>
+                <a href="#" class="cyber-icon">LI</a>
+                <a href="#" class="cyber-icon">TW</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
