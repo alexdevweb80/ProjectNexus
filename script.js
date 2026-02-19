@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = document.createElement('div');
         card.classList.add('project-card');
 
-        const imageContent = project.image 
+        const imageContent = project.image
             ? `<img src="${project.image}" alt="${project.title}" class="card-img" />`
             : `<span style="color: var(--neon-blue); font-family: var(--font-primary);">[ IMG_PLACEHOLDER ]</span>`;
 
@@ -135,22 +135,55 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = Object.fromEntries(formData.entries());
 
             try {
-                const response = await fetch('contact.php', {
+                // Discord Webhook URL
+                const webhookUrl = 'https://discordapp.com/api/webhooks/1474035966359507096/Ummuc7s5uJ39UhG4jPxft5bbyrXHBTIKA4VtK3pi3qnag4s9qRtAsSrr1XLz6EptF4B7';
+
+                // Construct Discord Payload (Embed)
+                const payload = {
+                    username: "Nexus Contact Bot",
+                    avatar_url: "https://i.imgur.com/4M34hi2.png", // Optional: Add a bot avatar
+                    embeds: [
+                        {
+                            title: "📨 New Transmission Received",
+                            color: 0x00ffcc, // Neon Blue/Green
+                            fields: [
+                                {
+                                    name: "👤 Identifyer (Name)",
+                                    value: data.name || "Unknown",
+                                    inline: true
+                                },
+                                {
+                                    name: "📧 Comms Link (Email)",
+                                    value: data.email || "Unknown",
+                                    inline: true
+                                },
+                                {
+                                    name: "📝 Transmission Data (Message)",
+                                    value: data.message || "No content provided."
+                                }
+                            ],
+                            footer: {
+                                text: "Secure System Notification • " + new Date().toLocaleString()
+                            }
+                        }
+                    ]
+                };
+
+                const response = await fetch(webhookUrl, {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/json' // Discord API is happy with JSON
                     },
-                    body: JSON.stringify(data)
+                    body: JSON.stringify(payload)
                 });
 
-                const result = await response.json();
-
-                if (response.ok) { // Success
+                if (response.ok || response.status === 204) { // Success (Discord returns 204)
                     formStatus.textContent = "> TRANSMISSION SUCCESSFUL. LINK ESTABLISHED.";
                     formStatus.classList.add('status-success');
+                    contactForm.className = 'cyber-form success';
                     contactForm.reset();
                 } else { // Server Error
-                    throw new Error(result.message || 'Unknown Error');
+                    throw new Error(`Discord API Error: ${response.status} ${response.statusText}`);
                 }
 
             } catch (error) {
