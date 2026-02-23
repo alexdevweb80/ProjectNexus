@@ -30,21 +30,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
             title: "Cyber Security Dashboard",
-            description: "Real-time threat monitoring interface with animated data visualization.",
-            link: "#",
-            image: null
+            description: "Plateforme communautaire cybersécurité — forum privé avec authentification, rôles, CTF &amp; dashboard admin.",
+            link: "dashboard_cyber.html",
+            linkTarget: "_blank",
+            image: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHB5ZjlyOGxqZzE4bW0wdmIzNHJzMGdjZ3Uwd2YzZ2h3NHAwbnZpaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JTheOT8fz6vMzQeFmB/giphy.gif"
         },
         {
-            title: "Neon Commerce",
-            description: "E-commerce platform featuring a dark mode aesthetic and seamless animations.",
-            link: "#",
-            image: null
+            title: "Site Vitrine KSEC-Cyber",
+            description: "Site vitrine pour KSEC Cyber.",
+            link: "https://ksec-cyber.fr/index.html#home",
+            image: "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExemY2NzR3bWZ6dHlraWRmYnF5MTZzdWhtNzg5NmUzYm84bHBjOGlibyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0MYPWj8QHG7FAgpy/giphy.gif"
         },
         {
-            title: "AI Chat Interface",
-            description: "Minimalist conversational UI powered by advanced language models.",
+            title: "Project en cours",
+            description: "Project en cours.",
             link: "#",
-            image: null
+            image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZ0Y2VuZndybjlyNWFubjU0OHlsZTY2bm9zOGtwMGNjOXVib2dsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0U7bWQK9s75PjRKcHz/giphy.gif"
         },
         {
             title: "Portfolio v1",
@@ -53,16 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmtjZmh5eDIxYW1ldXppdm85bGxhbWY5YTE1eGkyZGN3bmhucDA2OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VVbHH3GYePZrEFBRNj/giphy.gif"
         },
         {
-            title: "Crypto Tracker",
-            description: "Live cryptocurrency price tracker with websocket integration.",
+            title: "Project en cours",
+            description: "Project en cours.",
             link: "#",
-            image: null
+            image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZ0Y2VuZndybjlyNWFubjU0OHlsZTY2bm9zOGtwMGNjOXVib2dsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0U7bWQK9s75PjRKcHz/giphy.gif"
         },
         {
-            title: "Task Master",
-            description: "Productivity app with gamification elements and cyber rewards.",
+            title: "Project en cours",
+            description: "Project en cours.",
             link: "#",
-            image: null
+            image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZ0Y2VuZndybjlyNWFubjU0OHlsZTY2bm9zOGtwMGNjOXVib2dsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0U7bWQK9s75PjRKcHz/giphy.gif"
         }
     ];
 
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="card-content">
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-desc">${project.description}</p>
-                <a href="${project.link}" class="card-btn">Access System</a>
+                <a href="${project.link}" class="card-btn" ${project.linkTarget ? `target="${project.linkTarget}" rel="noopener noreferrer"` : ''}>Access System</a>
             </div>
         `;
 

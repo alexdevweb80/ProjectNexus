@@ -1,0 +1,575 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSEC Forum | Cyber Security Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;500;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <!-- CRT Effects -->
+    <div class="scanline"></div>
+    <div class="overlay"></div>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div id="loader">
+        <div class="loader-logo">K&nbsp;<span style="color:var(--neon-purple)">S</span>&nbsp;E&nbsp;<span
+                style="color:var(--neon-green)">C</span></div>
+        <div class="scanner"></div>
+        <div class="loader-text">INITIALIZING SECURE CHANNEL...</div>
+        <div class="loader-bar-wrap">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <a href="index.html" class="logo">NEXUS<span>_</span>PROJECTS</a>
+        <nav>
+            <ul>
+                <li><a href="#apercu" class="cyber-link">Aperçu</a></li>
+                <li><a href="#galerie" class="cyber-link">Galerie</a></li>
+                <li><a href="#fonctionnalites" class="cyber-link">Features</a></li>
+                <li><a href="#stack" class="cyber-link">Stack</a></li>
+                <li><a href="#equipe" class="cyber-link">Équipe</a></li>
+                <li><a href="#histoire" class="cyber-link">Histoire</a></li>
+                <!-- ✏️ REMPLACE #LIEN-DU-FORUM par l'URL réelle de ton forum -->
+                <li><a href="#LIEN-DU-FORUM" target="_blank" rel="noopener noreferrer" class="btn-back"
+                        style="border-color: var(--neon-blue); color: var(--neon-blue);">⚡ Forum</a></li>
+                <li><a href="index.html" class="btn-back">← Retour</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="apercu">
+            <div class="hero-badge">// PROJET PERSONNEL — CYBERSÉCURITÉ</div>
+            <h1 class="glitch" data-text="KSEC FORUM">KSEC FORUM</h1>
+            <p class="hero-sub">Plateforme communautaire dédiée à la cybersécurité — partage de connaissances, CTF,
+                veille techno &amp; entraide entre passionnés.</p>
+            <div class="hero-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag purple">Authentification</span>
+                <span class="tag green">Forum Privé</span>
+                <span class="tag red">OPSEC</span>
+                <span class="tag purple">CTF Ready</span>
+            </div>
+            <div class="hero-cta">
+                <a href="#galerie" class="cta-btn cta-primary">[ Voir les Screenshots ]</a>
+                <a href="#fonctionnalites" class="cta-btn cta-secondary">[ Découvrir les Features ]</a>
+            </div>
+        </section>
+
+        <!-- ===== STATS BAR ===== -->
+        <div class="stats-bar fade-in-up">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-value">5</span>
+                    <span class="stat-label">Pages vues</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">PHP</span>
+                    <span class="stat-label">Backend</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">100%</span>
+                    <span class="stat-label">Custom</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">2</span>
+                    <span class="stat-label">Devs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">∞</span>
+                    <span class="stat-label">Passion</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== GALERIE ===== -->
+        <section class="gallery-section" id="galerie">
+            <h2 class="section-title fade-in-up">Galerie du Projet</h2>
+            <p class="section-subtitle fade-in-up">// SCREENSHOTS — INTERFACE DU FORUM</p>
+
+            <div class="carousel-wrapper fade-in-up">
+                <div class="carousel-track-outer">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide">
+                            <img src="page1.png" alt="Page d'accueil du forum KSEC" loading="eager">
+                            <div class="slide-caption">
+                                <div class="slide-num">01</div>
+                                <div class="slide-info">
+                                    <div class="slide-title">// PAGE D'ACCUEIL</div>
+                                    <div class="slide-desc">Page principale du forum — flux des sujets récents &amp;
+                                        catégories</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="page2.png" alt="Tableau de bord du forum" loading="lazy">
+                            <div class="slide-caption">
+                                <div class="slide-num">02</div>
+                                <div class="slide-info">
+                                    <div class="slide-title">// TABLEAU DE BORD</div>
+                                    <div class="slide-desc">Vue d'ensemble des statistiques et des activités récentes
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="page3.png" alt="Section discussions du forum" loading="lazy">
+                            <div class="slide-caption">
+                                <div class="slide-num">03</div>
+                                <div class="slide-info">
+                                    <div class="slide-title">// DISCUSSIONS</div>
+                                    <div class="slide-desc">Interface des fils de discussion — cybersécurité, CTF, tools
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="page4.png" alt="Profil utilisateur" loading="lazy">
+                            <div class="slide-caption">
+                                <div class="slide-num">04</div>
+                                <div class="slide-info">
+                                    <div class="slide-title">// PROFIL UTILISATEUR</div>
+                                    <div class="slide-desc">Fiche membre — réputation, contributions &amp; badges</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="page5.png" alt="Administration du forum" loading="lazy">
+                            <div class="slide-caption">
+                                <div class="slide-num">05</div>
+                                <div class="slide-info">
+                                    <div class="slide-title">// ADMINISTRATION</div>
+                                    <div class="slide-desc">Panneau d'administration — gestion des membres &amp;
+                                        modération</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn" aria-label="Précédent">&#8592;</button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn" id="nextBtn" aria-label="Suivant">&#8594;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FEATURES ===== -->
+        <section id="fonctionnalites">
+            <h2 class="section-title fade-in-up">Fonctionnalités</h2>
+            <p class="section-subtitle fade-in-up">// MODULES IMPLÉMENTÉS</p>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in-up">
+                    <span class="feature-icon">🔐</span>
+                    <div class="feature-title">Authentification Sécurisée</div>
+                    <p class="feature-desc">Système de connexion avec hashage de mots de passe (bcrypt), sessions PHP
+                        sécurisées et protection CSRF sur tous les formulaires.</p>
+                </div>
+                <div class="feature-card purple fade-in-up">
+                    <span class="feature-icon">💬</span>
+                    <div class="feature-title">Forum Multi-Catégories</div>
+                    <p class="feature-desc">Structure complète de forum avec catégories, sous-catégories, fils de
+                        discussion imbriqués et système de réponses.</p>
+                </div>
+                <div class="feature-card green fade-in-up">
+                    <span class="feature-icon">👤</span>
+                    <div class="feature-title">Profils Utilisateurs</div>
+                    <p class="feature-desc">Fiches membres personnalisables avec avatars, biographies, historique des
+                        posts et système de réputation par votes.</p>
+                </div>
+                <div class="feature-card red fade-in-up">
+                    <span class="feature-icon">🛡️</span>
+                    <div class="feature-title">Rôles &amp; Permissions</div>
+                    <p class="feature-desc">Hiérarchie de rôles (Admin, Modérateur, Membre, Invité) avec permissions
+                        granulaires sur chaque section du forum.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <span class="feature-icon">🔍</span>
+                    <div class="feature-title">Recherche Full-Text</div>
+                    <p class="feature-desc">Moteur de recherche intégré pour retrouver rapidement des sujets, des posts
+                        ou des membres par mots-clés.</p>
+                </div>
+                <div class="feature-card purple fade-in-up">
+                    <span class="feature-icon">🎯</span>
+                    <div class="feature-title">Section CTF</div>
+                    <p class="feature-desc">Espace dédié aux Capture The Flag — writeups, ressources, partage de
+                        challenges et progression collective.</p>
+                </div>
+                <div class="feature-card green fade-in-up">
+                    <span class="feature-icon">📊</span>
+                    <div class="feature-title">Dashboard Admin</div>
+                    <p class="feature-desc">Panneau d'administration complet : gestion des utilisateurs, modération des
+                        contenus, statistiques et logs d'activité.</p>
+                </div>
+                <div class="feature-card red fade-in-up">
+                    <span class="feature-icon">🔔</span>
+                    <div class="feature-title">Système de Notifications</div>
+                    <p class="feature-desc">Alertes en temps réel pour les réponses, mentions, messages privés et mises
+                        à jour des sujets suivis.</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <span class="feature-icon">📝</span>
+                    <div class="feature-title">Éditeur Markdown</div>
+                    <p class="feature-desc">Rédaction de posts avec support Markdown, coloration syntaxique du code et
+                        prévisualisation en direct.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TERMINAL SHOWCASE ===== -->
+        <section class="terminal-section" id="stack">
+            <h2 class="section-title fade-in-up">Stack Technique</h2>
+            <p class="section-subtitle fade-in-up">// ARCHITECTURE &amp; TECHNOLOGIES</p>
+
+            <div class="terminal-block fade-in-up">
+                <div class="terminal-header">
+                    <div class="term-dot red"></div>
+                    <div class="term-dot yellow"></div>
+                    <div class="term-dot green"></div>
+                    <span class="term-title">ksec-forum — bash — 120×30</span>
+                </div>
+                <div class="terminal-body">
+                    <span class="t-line"><span class="t-prompt">root@ksec:~$</span> <span class="t-cmd">cat
+                            stack.config</span></span>
+                    <span class="t-line t-comment"># === KSEC FORUM — TECH STACK OVERVIEW ===</span>
+                    <span class="t-line t-out"></span>
+                    <span class="t-line"><span class="t-prompt">root@ksec:~$</span> <span class="t-cmd">ls -la
+                            /backend/</span></span>
+                    <span class="t-line t-out"><span class="t-ok">[OK]</span> PHP 8.2 .............. Core Backend
+                        Language</span>
+                    <span class="t-line t-out"><span class="t-ok">[OK]</span> MySQL 8.0 ............ Relational
+                        Database</span>
+                    <span class="t-line t-out"><span class="t-ok">[OK]</span> Apache / Nginx ....... Web Server</span>
+                    <span class="t-line t-out"><span class="t-ok">[OK]</span> Sessions PHP ......... Auth &amp; State
+                        Management</span>
+                    <span class="t-line t-out"></span>
+                    <span class="t-line"><span class="t-prompt">root@ksec:~$</span> <span class="t-cmd">ls -la
+                            /frontend/</span></span>
+                    <span class="t-line t-out"><span class="t-ok">[OK]</span> HTML5 / CSS3 ......... Structure &amp;
+                        Styling</span>
+                    <span class="t-line t-out"><span class="t-ok">[OK]</span> Vanilla JS ........... Interactivité
+                        Client-Side</span>
+                    <span class="t-line t-out"><span class="t-ok">[OK]</span> Cyberpunk Theme ...... Custom Design
+                        System</span>
+                    <span class="t-line t-out"></span>
+                    <span class="t-line"><span class="t-prompt">root@ksec:~$</span> <span class="t-cmd">run
+                            security-audit.sh</span></span>
+                    <span class="t-line t-out"><span class="t-ok">[PASS]</span> Password Hashing (bcrypt) ...........
+                        SECURE</span>
+                    <span class="t-line t-out"><span class="t-ok">[PASS]</span> SQL Injection Prevention (PDO) ......
+                        SECURE</span>
+                    <span class="t-line t-out"><span class="t-ok">[PASS]</span> CSRF Token Validation ...............
+                        SECURE</span>
+                    <span class="t-line t-out"><span class="t-ok">[PASS]</span> XSS Output Escaping .................
+                        SECURE</span>
+                    <span class="t-line t-out"><span class="t-warn">[INFO]</span> Session Regeneration ................
+                        ACTIVE</span>
+                    <span class="t-line t-out"></span>
+                    <span class="t-line"><span class="t-prompt">root@ksec:~$</span> <span class="t-cmd">status
+                            --system</span></span>
+                    <span class="t-line t-out"><span class="t-ok">[ONLINE]</span> Forum Core ........ OPERATIONAL</span>
+                    <span class="t-line t-out"><span class="t-ok">[ONLINE]</span> Auth System ....... OPERATIONAL</span>
+                    <span class="t-line t-out"><span class="t-ok">[ONLINE]</span> Admin Panel ....... OPERATIONAL</span>
+                    <span class="t-line t-out"></span>
+                    <span class="t-line"><span class="t-prompt">root@ksec:~$</span> <span
+                            class="t-cursor"></span></span>
+                </div>
+            </div>
+
+            <!-- Tech icons grid -->
+            <div class="tech-grid" style="margin-top: 3rem;">
+                <div class="tech-item fade-in-up">
+                    <span class="tech-icon">🐘</span>
+                    <div class="tech-name">PHP 8.2</div>
+                    <div class="tech-role">Backend</div>
+                </div>
+                <div class="tech-item fade-in-up">
+                    <span class="tech-icon">🗄️</span>
+                    <div class="tech-name">MySQL</div>
+                    <div class="tech-role">Database</div>
+                </div>
+                <div class="tech-item fade-in-up">
+                    <span class="tech-icon">🌐</span>
+                    <div class="tech-name">HTML5</div>
+                    <div class="tech-role">Structure</div>
+                </div>
+                <div class="tech-item fade-in-up">
+                    <span class="tech-icon">🎨</span>
+                    <div class="tech-name">CSS3</div>
+                    <div class="tech-role">Styling</div>
+                </div>
+                <div class="tech-item fade-in-up">
+                    <span class="tech-icon">⚡</span>
+                    <div class="tech-name">JavaScript</div>
+                    <div class="tech-role">Client-Side</div>
+                </div>
+                <div class="tech-item fade-in-up">
+                    <span class="tech-icon">🔒</span>
+                    <div class="tech-name">BCrypt</div>
+                    <div class="tech-role">Security</div>
+                </div>
+                <div class="tech-item fade-in-up">
+                    <span class="tech-icon">📦</span>
+                    <div class="tech-name">PDO</div>
+                    <div class="tech-role">DB Access</div>
+                </div>
+                <div class="tech-item fade-in-up">
+                    <span class="tech-icon">🖥️</span>
+                    <div class="tech-name">Apache</div>
+                    <div class="tech-role">Server</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TEAM ===== -->
+        <section id="equipe" style="background: rgba(0,0,0,0.2);">
+            <h2 class="section-title fade-in-up">L'Équipe</h2>
+            <p class="section-subtitle fade-in-up">// DÉVELOPPEURS DU PROJET</p>
+
+            <div class="team-grid">
+                <div class="team-card fade-in-up">
+                    <div class="team-avatar">👨‍💻</div>
+                    <div class="team-name">Alexis L.</div>
+                    <div class="team-role">// Web Developer</div>
+                    <div class="team-skills">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">UI/UX</span>
+                    </div>
+                </div>
+                <div class="team-card fade-in-up">
+                    <div class="team-avatar"
+                        style="border-color: rgba(188,19,254,0.4); box-shadow: 0 0 20px rgba(188,19,254,0.15); font-size: 2.5rem;">
+                        �‍🌫️
+                    </div>
+                    <div class="team-name">Lain</div>
+                    <div class="team-role" style="color: var(--neon-purple);">// Pentester</div>
+                    <div class="team-skills">
+                        <span class="skill-tag"
+                            style="border-color: rgba(0,243,255,0.3); color: var(--neon-blue); background: rgba(0,243,255,0.05);">Pentesting</span>
+                        <span class="skill-tag"
+                            style="border-color: rgba(0,243,255,0.3); color: var(--neon-blue); background: rgba(0,243,255,0.05);">CTF</span>
+                        <span class="skill-tag"
+                            style="border-color: rgba(0,243,255,0.3); color: var(--neon-blue); background: rgba(0,243,255,0.05);">OSINT</span>
+                        <span class="skill-tag"
+                            style="border-color: rgba(0,243,255,0.3); color: var(--neon-blue); background: rgba(0,243,255,0.05);">Network</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== HISTOIRE DU PROJET ===== -->
+    <section id="histoire"
+        style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,243,255,0.02) 50%, rgba(0,0,0,0.3) 100%);">
+        <h2 class="section-title fade-in-up">Histoire du Projet</h2>
+        <p class="section-subtitle fade-in-up">// DEVLOG — COMMENT KSEC FORUM EST NÉ</p>
+
+        <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 2.5rem;">
+
+            <!-- Entrée 1 -->
+            <div class="fade-in-up" style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div style="min-width: 70px; text-align: center;">
+                    <div
+                        style="font-family: var(--font-primary); font-size: 0.65rem; color: var(--neon-blue); letter-spacing: 1px; border: 1px solid rgba(0,243,255,0.3); padding: 4px 8px; background: rgba(0,243,255,0.05);">
+                        01
+                    </div>
+                    <div
+                        style="width: 1px; height: 100%; background: linear-gradient(to bottom, rgba(0,243,255,0.3), transparent); margin: 8px auto 0;">
+                    </div>
+                </div>
+                <div
+                    style="background: var(--card-bg); border: 1px solid rgba(0,243,255,0.08); padding: 1.5rem 2rem; flex: 1; backdrop-filter: blur(10px);">
+                    <div
+                        style="font-family: var(--font-primary); font-size: 0.8rem; color: var(--neon-blue); margin-bottom: 0.8rem; text-transform: uppercase; letter-spacing: 2px;">
+                        // L'IDÉE DE DÉPART
+                    </div>
+                    <p
+                        style="font-family: var(--font-secondary); font-size: 1.05rem; color: rgba(255,255,255,0.65); line-height: 1.8;">
+                        <!-- ✏️ REMPLACE CE TEXTE — Raconte comment l'idée du forum est née. Pourquoi ce projet ? Quelle était la vision de départ ? Quel problème voulais-tu résoudre ? -->
+                        <em style="color: rgba(0,243,255,0.4); font-style: normal;">[PLACEHOLDER] —Le projet a débuté en
+                            2018, lorsque j'ai rencontré LAIN, mon ami et cofondateur du site et du forum. À cette
+                            époque,
+                            j'étais en pleine recherche de défis et de projets professionnels. J'ai trouvé ma vocation
+                            dans le développement, un domaine où je me sens parfaitement à l'aise et où je découvre
+                            constamment de nouveaux univers et des problèmes à résoudre. </em>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Entrée 2 -->
+            <div class="fade-in-up" style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div style="min-width: 70px; text-align: center;">
+                    <div
+                        style="font-family: var(--font-primary); font-size: 0.65rem; color: var(--neon-purple); letter-spacing: 1px; border: 1px solid rgba(188,19,254,0.3); padding: 4px 8px; background: rgba(188,19,254,0.05);">
+                        02
+                    </div>
+                </div>
+                <div
+                    style="background: var(--card-bg); border: 1px solid rgba(188,19,254,0.08); padding: 1.5rem 2rem; flex: 1; backdrop-filter: blur(10px);">
+                    <div
+                        style="font-family: var(--font-primary); font-size: 0.8rem; color: var(--neon-purple); margin-bottom: 0.8rem; text-transform: uppercase; letter-spacing: 2px;">
+                        // L'APPLICATION
+                    </div>
+                    <p
+                        style="font-family: var(--font-secondary); font-size: 1.05rem; color: rgba(255,255,255,0.65); line-height: 1.8;">
+                        <em style="color: rgba(188,19,254,0.4); font-style: normal;">[PLACEHOLDER] —Mon ami LAIN
+                            possédait déjà de solides bases en hacking, avec de nombreuses certifications et
+                            d'innombrables heures passées sur des CTF pour perfectionner sa pratique. Nous avons alors
+                            eu le déclic de créer un forum permettant à tous d'accéder à de la documentation en français
+                            sur la cybersécurité, mais aussi d'obtenir des conseils. À plus long terme, nous envisageons
+                            de créer un club ou une communauté où les membres pourront échanger et s'entraider. </em>
+                    </p>
+                </div>
+            </div>
+            <!-- Entrée  3-->
+            <div class="fade-in-up" style="display: flex; gap: 1.5rem; align-items: flex-start;">
+                <div style="min-width: 70px; text-align: center;">
+                    <div
+                        style="font-family: var(--font-primary); font-size: 0.65rem; color: var(--neon-purple); letter-spacing: 1px; border: 1px solid rgba(188,19,254,0.3); padding: 4px 8px; background: rgba(188,19,254,0.05);">
+                        03
+                    </div>
+                </div>
+                <div
+                    style="background: var(--card-bg); border: 1px solid rgba(188,19,254,0.08); padding: 1.5rem 2rem; flex: 1; backdrop-filter: blur(10px);">
+                    <div
+                        style="font-family: var(--font-primary); font-size: 0.8rem; color: var(--neon-purple); margin-bottom: 0.8rem; text-transform: uppercase; letter-spacing: 2px;">
+                        // Accées sur le forum
+                    </div>
+                    <p
+                        style="font-family: var(--font-secondary); font-size: 1.05rem; color: rgba(255,255,255,0.65); line-height: 1.8;">
+                        <em style="color: rgba(188,19,254,0.4); font-style: normal;">[PLACEHOLDER] —Pour vous faciliter
+                            la tâche,
+                            je vous es creez un compte sur le forum.
+                            Nom d'utilisateur : testecoledev@protonmail.com
+                            Mot de passe : Test1234
+                            . </em>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bouton accès forum -->
+            <!-- ✏️ REMPLACE #LIEN-DU-FORUM par l'URL réelle de ton forum -->
+            <div class="fade-in-up" style="padding-left: calc(70px + 1.5rem);">
+                <a href="http://forum.ksec-cyber.fr/login.php" target="_blank" rel="noopener noreferrer"
+                    style="display: inline-flex; align-items: center; gap: 0.6rem; margin-top: 0.5rem; font-family: var(--font-primary); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; padding: 0.9rem 2.5rem; text-decoration: none; background: linear-gradient(135deg, rgba(0,243,255,0.1), rgba(188,19,254,0.1)); border: 1px solid var(--neon-blue); color: white; box-shadow: 0 0 20px rgba(0,243,255,0.15); transition: all 0.3s ease;">
+                    <span>⚡</span> Accéder au Forum
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    </main>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-left">
+            &copy; 2026 <span>KSEC_FORUM</span> — Projet Personnel &amp; Collaboratif
+        </div>
+        <div class="footer-right">
+            <a href="index.html" class="cyber-icon">NEXUS</a>
+            <a href="#" class="cyber-icon">GH</a>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // ===== LOADING SCREEN =====
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.classList.add('loader-hidden');
+            }, 1800);
+        });
+
+        // ===== CAROUSEL =====
+        (function () {
+            const track = document.getElementById('carouselTrack');
+            const slides = track ? track.querySelectorAll('.carousel-slide') : [];
+            const dotsContainer = document.getElementById('carouselDots');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            if (!track || slides.length === 0) return;
+
+            let current = 0;
+            let autoTimer = null;
+
+            // Build dots
+            slides.forEach((_, i) => {
+                const dot = document.createElement('div');
+                dot.className = 'dot' + (i === 0 ? ' active' : '');
+                dot.addEventListener('click', () => goTo(i));
+                dotsContainer.appendChild(dot);
+            });
+
+            function goTo(index) {
+                slides[current].querySelector('img').style.filter = 'brightness(0.7)';
+                current = (index + slides.length) % slides.length;
+                track.style.transform = `translateX(-${current * 100}%)`;
+                slides[current].querySelector('img').style.filter = 'brightness(1)';
+                dotsContainer.querySelectorAll('.dot').forEach((d, i) => {
+                    d.classList.toggle('active', i === current);
+                });
+            }
+
+            prevBtn.addEventListener('click', () => { clearInterval(autoTimer); goTo(current - 1); startAuto(); });
+            nextBtn.addEventListener('click', () => { clearInterval(autoTimer); goTo(current + 1); startAuto(); });
+
+            // Touch swipe support
+            let touchStartX = 0;
+            track.parentElement.addEventListener('touchstart', e => touchStartX = e.touches[0].clientX);
+            track.parentElement.addEventListener('touchend', e => {
+                const dx = e.changedTouches[0].clientX - touchStartX;
+                if (Math.abs(dx) > 50) { clearInterval(autoTimer); goTo(current + (dx < 0 ? 1 : -1)); startAuto(); }
+            });
+
+            function startAuto() {
+                autoTimer = setInterval(() => goTo(current + 1), 4000);
+            }
+
+            startAuto();
+        })();
+
+        // ===== SCROLL REVEAL =====
+        (function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, 80);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08 });
+
+            document.querySelectorAll('.fade-in-up').forEach((el, index) => {
+                // Stagger sibling elements
+                el.style.transitionDelay = `${(index % 4) * 80}ms`;
+                observer.observe(el);
+            });
+        })();
+    </script>
+</body>
+
+</html>
