@@ -1,10 +1,10 @@
 :root {
-    --bg-color: #050505;
-    --card-bg: rgba(10, 15, 20, 0.6);
+    --bg-color: #111111;
+    --card-bg: rgba(20, 28, 36, 0.72);
     --neon-blue: #00f3ff;
     --neon-purple: #bc13fe;
     --neon-green: #0aff0a;
-    --text-color: #e0e0e0;
+    --text-color: #ebebeb;
     --font-primary: 'Orbitron', sans-serif;
     --font-secondary: 'Rajdhani', sans-serif;
 }
@@ -33,8 +33,8 @@ body {
     background: linear-gradient(to bottom,
             rgba(255, 255, 255, 0),
             rgba(255, 255, 255, 0) 50%,
-            rgba(0, 0, 0, 0.2) 50%,
-            rgba(0, 0, 0, 0.2));
+            rgba(0, 0, 0, 0.08) 50%,
+            rgba(0, 0, 0, 0.08));
     background-size: 100% 4px;
     z-index: 1000;
     pointer-events: none;
@@ -47,7 +47,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(0, 243, 255, 0.03) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: radial-gradient(circle, rgba(0, 243, 255, 0.04) 0%, rgba(0, 0, 0, 0.6) 100%);
     pointer-events: none;
     z-index: 999;
 }

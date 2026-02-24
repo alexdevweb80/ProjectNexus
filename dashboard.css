@@ -1,11 +1,11 @@
 :root {
-    --bg-color: #050505;
-    --card-bg: rgba(10, 15, 20, 0.6);
+    --bg-color: #111111;
+    --card-bg: rgba(20, 28, 36, 0.72);
     --neon-blue: #00f3ff;
     --neon-purple: #bc13fe;
     --neon-green: #0aff0a;
     --neon-red: #ff003c;
-    --text-color: #e0e0e0;
+    --text-color: #ebebeb;
     --font-primary: 'Orbitron', sans-serif;
     --font-secondary: 'Rajdhani', sans-serif;
     --font-mono: 'Share Tech Mono', monospace;
