@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZ0Y2VuZndybjlyNWFubjU0OHlsZTY2bm9zOGtwMGNjOXVib2dsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0U7bWQK9s75PjRKcHz/giphy.gif"
         },
         {
-            title: "Portfolio v1",
-            description: "Legacy portfolio archive. See how the design evolved over time.",
+            title: "Portfolio-Pro",
+            description: "Portfolio-Pro.",
             link: "https://alexdevweb80.github.io/alexdevweb80-alexis-leroi-portfolio-cv.github.io/",
             image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmtjZmh5eDIxYW1ldXppdm85bGxhbWY5YTE1eGkyZGN3bmhucDA2OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VVbHH3GYePZrEFBRNj/giphy.gif"
         },

@@ -1,6 +1,6 @@
 :root {
-    --bg-color: #111111;
-    --card-bg: rgba(20, 28, 36, 0.72);
+    --bg-color: #181e27;
+    --card-bg: rgba(30, 42, 56, 0.85);
     --neon-blue: #00f3ff;
     --neon-purple: #bc13fe;
     --neon-green: #0aff0a;
@@ -53,7 +53,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(0, 243, 255, 0.03) 0%, rgba(0, 0, 0, 0.8) 100%);
+    background: radial-gradient(circle, rgba(0, 243, 255, 0.05) 0%, rgba(0, 0, 0, 0.35) 100%);
     pointer-events: none;
     z-index: 999;
 }
@@ -515,7 +515,7 @@ section {
 
 .section-subtitle {
     font-family: var(--font-mono);
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 0.8rem;
     letter-spacing: 2px;
     margin-left: 1.3rem;
@@ -524,8 +524,8 @@ section {
 
 /* ===== STATS BAR ===== */
 .stats-bar {
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(0, 243, 255, 0.15);
+    background: rgba(20, 32, 48, 0.7);
+    border: 1px solid rgba(0, 243, 255, 0.25);
     border-left: 3px solid var(--neon-blue);
 }
 
@@ -561,7 +561,7 @@ section {
 .stat-label {
     font-family: var(--font-mono);
     font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.65);
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 0.3rem;
@@ -784,7 +784,7 @@ section {
 .feature-desc {
     font-family: var(--font-secondary);
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
 }
 
@@ -839,8 +839,8 @@ section {
 }
 
 .tech-item {
-    background: rgba(10, 15, 20, 0.8);
-    border: 1px solid rgba(0, 243, 255, 0.1);
+    background: rgba(22, 34, 50, 0.85);
+    border: 1px solid rgba(0, 243, 255, 0.18);
     padding: 1.5rem 1rem;
     text-align: center;
     transition: all 0.3s;
@@ -871,7 +871,7 @@ section {
 .tech-role {
     font-family: var(--font-mono);
     font-size: 0.6rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
     margin-top: 0.2rem;
 }
 
@@ -960,13 +960,13 @@ section {
 }
 
 .terminal-block {
-    background: rgba(0, 0, 0, 0.85);
-    border: 1px solid rgba(0, 243, 255, 0.2);
+    background: rgba(10, 18, 30, 0.92);
+    border: 1px solid rgba(0, 243, 255, 0.3);
     border-radius: 6px;
     overflow: hidden;
     max-width: 900px;
     margin: 0 auto;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 243, 255, 0.05);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 243, 255, 0.1);
 }
 
 .terminal-header {
@@ -999,7 +999,7 @@ section {
 .term-title {
     font-family: var(--font-mono);
     font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.65);
     margin-left: 0.5rem;
     letter-spacing: 1px;
 }
@@ -1024,7 +1024,7 @@ section {
 }
 
 .t-out {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.75);
     padding-left: 1.2rem;
 }
 
@@ -1041,7 +1041,7 @@ section {
 }
 
 .t-comment {
-    color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.5);
     padding-left: 1.2rem;
 }
 
@@ -1070,8 +1070,8 @@ section {
 /* ===== FOOTER ===== */
 footer {
     padding: 2.5rem 5%;
-    border-top: 1px solid rgba(0, 243, 255, 0.15);
-    background: rgba(0, 0, 0, 0.85);
+    border-top: 1px solid rgba(0, 243, 255, 0.25);
+    background: rgba(15, 22, 35, 0.92);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1082,7 +1082,7 @@ footer {
 .footer-left {
     font-family: var(--font-mono);
     font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-left span {

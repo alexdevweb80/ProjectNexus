@@ -1,6 +1,6 @@
 :root {
-    --bg-color: #111111;
-    --card-bg: rgba(20, 28, 36, 0.72);
+    --bg-color: #181e27;
+    --card-bg: rgba(30, 42, 56, 0.85);
     --neon-blue: #00f3ff;
     --neon-purple: #bc13fe;
     --neon-green: #0aff0a;
@@ -47,7 +47,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(0, 243, 255, 0.04) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: radial-gradient(circle, rgba(0, 243, 255, 0.06) 0%, rgba(0, 0, 0, 0.3) 100%);
     pointer-events: none;
     z-index: 999;
 }
@@ -367,11 +367,11 @@ nav ul {
 .card-image {
     width: 100%;
     height: 180px;
-    background-color: #0f151a;
+    background-color: #1a2535;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgba(0, 243, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 243, 255, 0.18);
     overflow: hidden;
 }
 
@@ -395,7 +395,7 @@ nav ul {
 
 .project-desc {
     font-size: 0.9rem;
-    color: #a0a0a0;
+    color: #c8c8c8;
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
@@ -439,7 +439,7 @@ nav ul {
 /* Contact Section */
 .contact-container {
     padding: 4rem 5%;
-    background: linear-gradient(180deg, var(--bg-color) 0%, rgba(10, 15, 20, 0.8) 100%);
+    background: linear-gradient(180deg, var(--bg-color) 0%, rgba(20, 32, 50, 0.6) 100%);
 }
 
 .contact-wrapper {
@@ -498,8 +498,8 @@ nav ul {
 
 .cyber-input,
 .cyber-textarea {
-    background: rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(15, 25, 40, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 1rem;
     color: var(--text-color);
     font-family: var(--font-secondary);
@@ -558,9 +558,9 @@ nav ul {
 /* Footer */
 footer {
     padding: 2rem 5%;
-    border-top: 1px solid rgba(0, 243, 255, 0.2);
+    border-top: 1px solid rgba(0, 243, 255, 0.25);
     text-align: center;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(15, 22, 35, 0.9);
     margin-top: auto;
 }
 
