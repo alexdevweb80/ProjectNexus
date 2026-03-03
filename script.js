@@ -92,6 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.appendChild(card);
     });
 
+    // Update About section project count
+    const countEl = document.getElementById('project-count');
+    if (countEl) countEl.textContent = projects.length;
+
     // 3D Tilt Effect on Hover
     const cards = document.querySelectorAll('.project-card');
 

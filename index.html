@@ -27,6 +27,7 @@
         <nav>
             <ul>
                 <li><a href="#projects" class="cyber-link">Projects</a></li>
+                <li><a href="#about" class="cyber-link">About</a></li>
                 <li><a href="#contact" class="cyber-link">Contact</a></li>
             </ul>
         </nav>
@@ -34,8 +35,53 @@
 
     <main>
         <section class="hero">
-            <h1 class="glitch neon-blink" data-text="SYSTEM_OFFLINE">SYSTEM_OFFLINE</h1>
+            <h1 class="glitch neon-blink" data-text="SYSTEM_ONLINE" style="color: var(--neon-green); text-shadow: 0 0 10px var(--neon-green), 0 0 30px var(--neon-green);">SYSTEM_ONLINE</h1>
             <p class="subtitle typing-effect" id="typing-text"></p>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section id="about" class="about-container">
+            <h2 class="section-title">// À PROPOS DU PROJET</h2>
+            <div class="about-wrapper">
+                <div class="about-terminal">
+                    <div class="terminal-bar">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">README.md</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="terminal-line"><span class="t-prompt">root@nexus:~$</span> <span class="t-cmd">cat README.md</span></p>
+                        <div class="about-content">
+                            <p class="about-label">// NEXUS_PROJECTS — CLASSEUR NUMÉRIQUE</p>
+                            <p class="about-text">
+                                Ce site est mon <span class="highlight-green">classeur numérique personnel</span> — un espace centralisé qui regroupe l'ensemble de mes créations, projets et expérimentations.
+                            </p>
+                            <p class="about-text">
+                                Chaque carte est une fenêtre sur un projet : développement web, cybersécurité, outils, prototypes... Tout ce que j'ai conçu, construit et déployé se trouve ici, archivé et accessible.
+                            </p>
+                            <p class="about-text">
+                                L'objectif est simple : <span class="highlight-blue">garder une trace vivante</span> de mon évolution en tant que développeur et partager mes travaux avec ceux qui souhaitent les découvrir.
+                            </p>
+                            <div class="about-stats">
+                                <div class="about-stat">
+                                    <span class="stat-val" id="project-count">—</span>
+                                    <span class="stat-lbl">Projets archivés</span>
+                                </div>
+                                <div class="about-stat">
+                                    <span class="stat-val">100%</span>
+                                    <span class="stat-lbl">Personnel</span>
+                                </div>
+                                <div class="about-stat">
+                                    <span class="stat-val">∞</span>
+                                    <span class="stat-lbl">En cours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="terminal-line" style="margin-top:1rem;"><span class="t-prompt">root@nexus:~$</span> <span class="t-cursor">▋</span></p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="projects" class="projects-container">
@@ -83,4 +129,3 @@
 </body>
 
 </html>
-
