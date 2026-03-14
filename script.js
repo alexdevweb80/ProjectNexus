@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExemY2NzR3bWZ6dHlraWRmYnF5MTZzdWhtNzg5NmUzYm84bHBjOGlibyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0MYPWj8QHG7FAgpy/giphy.gif"
         },
         {
-            title: "Project en cours",
-            description: "Project en cours.",
-            link: "#",
-            image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZ0Y2VuZndybjlyNWFubjU0OHlsZTY2bm9zOGtwMGNjOXVib2dsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0U7bWQK9s75PjRKcHz/giphy.gif"
+            title: "Dashboard-TryHackMe",
+            description: "Dashboard TryHackMe, pour suivre ma progression et mes certification dan sle mon de du hacking !",
+            link: "https://alexdevweb80.github.io/dashboardTHM/",
+            image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm10dnFyNXphbDJxNWpuenI1MjN3YzVlYTYxYTF4aThxdTkzYjgyeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u9293Xrizd0tO/giphy.gif"
         },
         {
             title: "Portfolio-Pro",
