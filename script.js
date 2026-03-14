@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             title: "Dashboard-TryHackMe",
-            description: "Dashboard TryHackMe, pour suivre ma progression et mes certification dan sle mon de du hacking !",
+            description: "Dashboard TryHackMe, pour suivre ma progression et mes certification dan sle mon de du hacking ! encore en cours de construction pour la partie mobile!!",
             link: "https://alexdevweb80.github.io/dashboardTHM/",
             image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm10dnFyNXphbDJxNWpuenI1MjN3YzVlYTYxYTF4aThxdTkzYjgyeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u9293Xrizd0tO/giphy.gif"
         },
