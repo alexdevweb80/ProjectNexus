@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "WePlan",
             description: "Planning Partagé est une application web de calendrier collaboratif que j'ai développée en HTML, CSS et JavaScript, avec Firebase comme base de données temps réel.",
             link: "https://alexdevweb80.github.io/calendar/login.html",
-            image: "https://tenor.com/fr/view/system-hacking-pol-hilomk-emoticono13-iconic-intro-gif-10057828666635305805"
+            image: "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm85eDducjUxMHduaWNybTFsN3E5OGlldGk0OWYwNG8xbjE1enFsMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WRoLGgwE4xTQYTxyJg/giphy.gif"
         },
         {
             title: "Project en cours",
