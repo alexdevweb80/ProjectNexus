@@ -54,10 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmtjZmh5eDIxYW1ldXppdm85bGxhbWY5YTE1eGkyZGN3bmhucDA2OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VVbHH3GYePZrEFBRNj/giphy.gif"
         },
         {
-            title: "Project en cours",
-            description: "Project en cours.",
-            link: "#",
-            image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHZ0Y2VuZndybjlyNWFubjU0OHlsZTY2bm9zOGtwMGNjOXVib2dsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0U7bWQK9s75PjRKcHz/giphy.gif"
+            title: "Planning Partagé",
+            description: "Planning Partagé est une application web de calendrier collaboratif que j'ai développée en HTML, CSS et JavaScript, avec Firebase comme base de données temps réel.",
+            link: "https://alexdevweb80.github.io/calendar/login.html",
+            image: "https://tenor.com/fr/view/system-hacking-pol-hilomk-emoticono13-iconic-intro-gif-10057828666635305805"
         },
         {
             title: "Project en cours",
