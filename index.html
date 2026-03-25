@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexusHack — Portfolio Cyberpunk</title>
+  <meta name="description" content="Portfolio cyberpunk & cybersécurité — Projets, compétences et contact."/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Base layout & global styles -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- UI components: skills, projects, contact, toast -->
+  <link rel="stylesheet" href="css/components.css"/>
+</head>
+<body>
+
+  <!-- ===== CANVAS BACKGROUND (Matrix rain — animated via background.js) ===== -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="nav-logo">⬡ NEXUS<span style="color:var(--c2)">HACK</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Mobile hamburger (toggled by ui.js) -->
+    <div class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <p class="hero-badge">// Bienvenue dans la zone sécurisée //</p>
+    <h1 class="hero-title">Alexis Leroi</h1>
+    <p class="hero-sub">
+      Développeur Front-End &amp; passionné de cybersécurité —
+      je construis des interfaces numériques qui hackent les perceptions.
+    </p>
+    <!-- Hacker typing effect — animated by ui.js -->
+    <div class="typing-wrap">&gt;&nbsp;<span id="typing-text"></span><span class="cursor">█</span></div>
+    <a href="#projects" class="hero-cta">&#9654; Explorer mes projets</a>
+    <div class="scroll-hint">SCROLL</div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-header">
+      <p class="section-label">// Modules activés //</p>
+      <h2 class="section-title">Compétences</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <!-- data-w = target bar width in % (animated by ui.js IntersectionObserver) -->
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">HTML / CSS</div>
+        <div class="skill-level"><div class="skill-bar" data-w="95"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🔧</div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-level"><div class="skill-bar" data-w="88"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">UI / Design</div>
+        <div class="skill-level"><div class="skill-bar" data-w="82"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🔐</div>
+        <div class="skill-name">Cybersécurité</div>
+        <div class="skill-level"><div class="skill-bar" data-w="75"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🐧</div>
+        <div class="skill-name">Linux / Shell</div>
+        <div class="skill-level"><div class="skill-bar" data-w="70"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">Réseaux</div>
+        <div class="skill-level"><div class="skill-bar" data-w="65"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-header">
+      <p class="section-label">// Accès aux fichiers //</p>
+      <h2 class="section-title">Projets</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- ── Portfolio Personnel ── -->
+      <div class="project-card">
+        <svg class="project-art" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#050a13"/>
+          <defs>
+            <radialGradient id="g1" cx="50%" cy="50%">
+              <stop offset="0%" stop-color="#003d3d" stop-opacity=".8"/>
+              <stop offset="100%" stop-color="#050a13"/>
+            </radialGradient>
+          </defs>
+          <rect width="400" height="180" fill="url(#g1)"/>
+          <text x="20" y="30"  fill="#00ffe7" fill-opacity=".3" font-family="monospace" font-size="11">&lt;portfolio /&gt;</text>
+          <text x="20" y="50"  fill="#00ffe7" fill-opacity=".2" font-family="monospace" font-size="10">const dev = { skills: [...] }</text>
+          <text x="20" y="70"  fill="#3a7bd5" fill-opacity=".3" font-family="monospace" font-size="10">import { creativity } from 'mind'</text>
+          <circle cx="320" cy="90" r="55" fill="none" stroke="#00ffe7" stroke-width="1" stroke-opacity=".2"/>
+          <circle cx="320" cy="90" r="40" fill="none" stroke="#00ffe7" stroke-width="1" stroke-opacity=".15"/>
+          <text x="295" y="95"  fill="#00ffe7" fill-opacity=".8" font-family="monospace" font-size="28">👤</text>
+          <text x="20" y="130" fill="#3a7bd5" fill-opacity=".3" font-family="monospace" font-size="10">export default AlexisLeroi</text>
+          <text x="20" y="155" fill="#00ffe7" fill-opacity=".15" font-family="monospace" font-size="10">// BUILD SUCCESS ✓</text>
+        </svg>
+        <div class="project-body">
+          <span class="project-tag tag-cyber">Portfolio</span>
+          <h3 class="project-title">Portfolio Personnel</h3>
+          <p class="project-desc">Interface de présentation complète — compétences, expériences et projets en mode terminal.</p>
+          <a href="https://alexdevweb80.github.io/alexdevweb80-alexis-leroi-portfolio-cv.github.io/" target="_blank" rel="noopener" class="project-link">Explorer →</a>
+        </div>
+      </div>
+
+      <!-- ── Forum KSEC-Cyber ── -->
+      <div class="project-card">
+        <svg class="project-art" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#050a13"/>
+          <defs>
+            <radialGradient id="g2" cx="50%" cy="50%">
+              <stop offset="0%" stop-color="#2d0028" stop-opacity=".9"/>
+              <stop offset="100%" stop-color="#050a13"/>
+            </radialGradient>
+          </defs>
+          <rect width="400" height="180" fill="url(#g2)"/>
+          <line x1="50"  y1="40"  x2="180" y2="90"  stroke="#ff00c8" stroke-width="1" stroke-opacity=".2"/>
+          <line x1="180" y1="90"  x2="320" y2="60"  stroke="#ff00c8" stroke-width="1" stroke-opacity=".2"/>
+          <line x1="180" y1="90"  x2="220" y2="140" stroke="#ff00c8" stroke-width="1" stroke-opacity=".2"/>
+          <line x1="320" y1="60"  x2="350" y2="120" stroke="#ff00c8" stroke-width="1" stroke-opacity=".2"/>
+          <circle cx="50"  cy="40"  r="6" fill="#ff00c8" fill-opacity=".6"/>
+          <circle cx="180" cy="90"  r="9" fill="#ff00c8" fill-opacity=".7"/>
+          <circle cx="320" cy="60"  r="6" fill="#00ffe7" fill-opacity=".5"/>
+          <circle cx="220" cy="140" r="5" fill="#ff00c8" fill-opacity=".5"/>
+          <circle cx="350" cy="120" r="5" fill="#3a7bd5" fill-opacity=".5"/>
+          <text x="155" y="170" fill="#ff00c8" fill-opacity=".5" font-family="monospace" font-size="9">KSEC-FORUM v2.4</text>
+          <text x="30"  y="165" fill="#ff00c8" fill-opacity=".3" font-family="monospace" font-size="22">🔒</text>
+        </svg>
+        <div class="project-body">
+          <span class="project-tag tag-hack">Cybersécurité</span>
+          <h3 class="project-title">Forum KSEC-Cyber</h3>
+          <p class="project-desc">Plateforme communautaire dédiée à la cybersécurité — échanges, challenges et ressources CTF.</p>
+          <a href="https://forum.ksec-cyber.fr/login.php" target="_blank" rel="noopener" class="project-link">Explorer →</a>
+        </div>
+      </div>
+
+      <!-- ── Dashboard THM ── -->
+      <div class="project-card">
+        <svg class="project-art" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#050a13"/>
+          <defs>
+            <radialGradient id="g3" cx="30%" cy="50%">
+              <stop offset="0%" stop-color="#001a3d" stop-opacity=".9"/>
+              <stop offset="100%" stop-color="#050a13"/>
+            </radialGradient>
+          </defs>
+          <rect width="400" height="180" fill="url(#g3)"/>
+          <rect x="20"  y="20" width="160" height="80" rx="6" fill="rgba(58,123,213,.08)" stroke="#3a7bd5" stroke-width="1" stroke-opacity=".3"/>
+          <rect x="22"  y="60" width="20"  height="38" rx="2" fill="#3a7bd5" fill-opacity=".7"/>
+          <rect x="47"  y="45" width="20"  height="53" rx="2" fill="#00ffe7" fill-opacity=".6"/>
+          <rect x="72"  y="55" width="20"  height="43" rx="2" fill="#3a7bd5" fill-opacity=".5"/>
+          <rect x="97"  y="40" width="20"  height="58" rx="2" fill="#00ffe7" fill-opacity=".7"/>
+          <rect x="122" y="50" width="20"  height="48" rx="2" fill="#3a7bd5" fill-opacity=".6"/>
+          <rect x="147" y="35" width="20"  height="63" rx="2" fill="#00ffe7" fill-opacity=".5"/>
+          <rect x="200" y="20"  width="180" height="35" rx="6" fill="rgba(0,255,231,.05)"   stroke="#00ffe7" stroke-width="1" stroke-opacity=".2"/>
+          <text x="210" y="42" fill="#00ffe7" fill-opacity=".6" font-family="monospace" font-size="10">THM Score: ██████░ 78%</text>
+          <rect x="200" y="65"  width="180" height="35" rx="6" fill="rgba(255,0,200,.05)"   stroke="#ff00c8" stroke-width="1" stroke-opacity=".2"/>
+          <text x="210" y="87" fill="#ff00c8" fill-opacity=".6" font-family="monospace" font-size="10">Rooms: 42 completed</text>
+          <rect x="200" y="110" width="180" height="35" rx="6" fill="rgba(58,123,213,.05)"  stroke="#3a7bd5" stroke-width="1" stroke-opacity=".2"/>
+          <text x="210" y="132" fill="#3a7bd5" fill-opacity=".6" font-family="monospace" font-size="10">Rank: #1,240 Global</text>
+        </svg>
+        <div class="project-body">
+          <span class="project-tag tag-dash">Dashboard</span>
+          <h3 class="project-title">Dashboard THM</h3>
+          <p class="project-desc">Tableau de bord analytique pour TryHackMe — progression, stats et classements en temps réel.</p>
+          <a href="https://alexdevweb80.github.io/dashboardTHM/" target="_blank" rel="noopener" class="project-link">Explorer →</a>
+        </div>
+      </div>
+
+      <!-- ── KSEC-Cyber Site vitrine ── -->
+      <div class="project-card">
+        <svg class="project-art" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#050a13"/>
+          <defs>
+            <radialGradient id="g4" cx="50%" cy="40%">
+              <stop offset="0%" stop-color="#002a15" stop-opacity=".9"/>
+              <stop offset="100%" stop-color="#050a13"/>
+            </radialGradient>
+          </defs>
+          <rect width="400" height="180" fill="url(#g4)"/>
+          <polygon points="200,30 240,80 220,140 180,140 160,80" fill="none" stroke="#7effa0" stroke-width="1.5" stroke-opacity=".5"/>
+          <polygon points="200,50 228,85 214,130 186,130 172,85" fill="none" stroke="#7effa0" stroke-width="1"   stroke-opacity=".3"/>
+          <text x="185" y="100" fill="#7effa0" fill-opacity=".8"  font-family="monospace" font-size="30">🛡️</text>
+          <text x="50"  y="50"  fill="#7effa0" fill-opacity=".15" font-family="monospace" font-size="10">01001011 01010011</text>
+          <text x="50"  y="65"  fill="#7effa0" fill-opacity=".10" font-family="monospace" font-size="10">01000101 01000011</text>
+          <text x="270" y="130" fill="#7effa0" fill-opacity=".15" font-family="monospace" font-size="10">SECURE::v1.0</text>
+          <text x="130" y="165" fill="#7effa0" fill-opacity=".4"  font-family="monospace" font-size="9">KSEC-CYBER // PROTECT &amp; DEFEND</text>
+        </svg>
+        <div class="project-body">
+          <span class="project-tag tag-sec">Sécurité</span>
+          <h3 class="project-title">KSEC-Cyber</h3>
+          <p class="project-desc">Site vitrine de l'entité KSEC — formation, pentest et expertise en cybersécurité offensive/défensive.</p>
+          <a href="https://ksec-cyber.fr/" target="_blank" rel="noopener" class="project-link">Explorer →</a>
+        </div>
+      </div>
+
+      <!-- ── WEPLAN ── -->
+      <div class="project-card">
+        <svg class="project-art" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="180" fill="#050a13"/>
+          <defs>
+            <radialGradient id="g5" cx="50%" cy="50%">
+              <stop offset="0%" stop-color="#2a1500" stop-opacity=".9"/>
+              <stop offset="100%" stop-color="#050a13"/>
+            </radialGradient>
+          </defs>
+          <rect width="400" height="180" fill="url(#g5)"/>
+          <rect x="80" y="25"  width="240" height="130" rx="8" fill="rgba(255,157,77,.05)" stroke="#ff9d4d" stroke-width="1" stroke-opacity=".3"/>
+          <rect x="80" y="25"  width="240" height="25"  rx="8" fill="rgba(255,157,77,.12)"/>
+          <text x="170" y="42" fill="#ff9d4d" fill-opacity=".8"  font-family="monospace" font-size="11">◆ WEPLAN ◆</text>
+          <line x1="80"  y1="70"  x2="320" y2="70"  stroke="#ff9d4d" stroke-opacity=".1"/>
+          <line x1="80"  y1="100" x2="320" y2="100" stroke="#ff9d4d" stroke-opacity=".1"/>
+          <line x1="80"  y1="130" x2="320" y2="130" stroke="#ff9d4d" stroke-opacity=".1"/>
+          <line x1="140" y1="50"  x2="140" y2="155" stroke="#ff9d4d" stroke-opacity=".1"/>
+          <line x1="200" y1="50"  x2="200" y2="155" stroke="#ff9d4d" stroke-opacity=".1"/>
+          <line x1="260" y1="50"  x2="260" y2="155" stroke="#ff9d4d" stroke-opacity=".1"/>
+          <rect x="88"  y="75"  width="44"  height="18" rx="3" fill="#ff9d4d" fill-opacity=".3"/>
+          <rect x="148" y="105" width="44"  height="18" rx="3" fill="#00ffe7" fill-opacity=".3"/>
+          <rect x="208" y="75"  width="44"  height="18" rx="3" fill="#ff9d4d" fill-opacity=".2"/>
+          <rect x="208" y="135" width="104" height="15" rx="3" fill="#ff00c8" fill-opacity=".2"/>
+          <text x="90" y="165" fill="#ff9d4d" fill-opacity=".35" font-family="monospace" font-size="9">SYNC ✓ PLAN MODE ACTIVE</text>
+        </svg>
+        <div class="project-body">
+          <span class="project-tag tag-plan">Planning</span>
+          <h3 class="project-title">WEPLAN</h3>
+          <p class="project-desc">Application de planning collaboratif — organisation personnelle et partagée avec calendrier interactif.</p>
+          <a href="https://alexdevweb80.github.io/calendar/login.html" target="_blank" rel="noopener" class="project-link">Explorer →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-header">
+      <p class="section-label">// Établir la connexion //</p>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-wrap">
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="c-name">Identifiant</label>
+          <input type="text" id="c-name" placeholder="Votre nom..." autocomplete="off"/>
+        </div>
+        <div class="form-group">
+          <label for="c-email">Adresse IP (Email)</label>
+          <input type="email" id="c-email" placeholder="email@domain.com" autocomplete="off"/>
+        </div>
+        <div class="form-group">
+          <label for="c-msg">Message crypté</label>
+          <textarea id="c-msg" placeholder="Votre message..."></textarea>
+        </div>
+        <button type="submit" class="btn-send" id="btn-send">▶ Envoyer la transmission</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>⬡ NEXUSHACK &nbsp;·&nbsp; Alexis Leroi &nbsp;·&nbsp; &copy; 2025 &nbsp;·&nbsp; ALL SYSTEMS OPERATIONAL</p>
+  </footer>
+
+  <!-- Toast notification (shown by contact.js) -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ===== SCRIPTS (defer = non-blocking, runs after DOM parse) ===== -->
+  <!-- Matrix rain canvas background -->
+  <script src="js/background.js" defer></script>
+  <!-- Nav toggle, typing effect, scroll animations, parallax -->
+  <script src="js/ui.js" defer></script>
+  <!-- Contact form → Discord webhook -->
+  <script src="js/contact.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+/* ================================================================
+   style.css — Base styles
+   NexusHack Portfolio | Cyberpunk Theme
+   ================================================================ */
+
+/* ---------------------------
+   RESET & CSS VARIABLES
+--------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --c1: #00ffe7;        /* Cyan neon */
+  --c2: #ff00c8;        /* Magenta neon */
+  --c3: #3a7bd5;        /* Electric blue */
+  --bg: #050a13;        /* Dark background */
+  --bg2: #0a111f;       /* Slightly lighter bg for alternating sections */
+  --glass: rgba(10, 20, 40, 0.6); /* Glassmorphism base */
+  --text: #c8e6ff;      /* Light text */
+  --font-main: 'Orbitron', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ---------------------------
+   CANVAS BACKGROUND (Matrix)
+--------------------------- */
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ---------------------------
+   NAVIGATION
+--------------------------- */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(5, 10, 20, 0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 255, 231, 0.15);
+}
+
+.nav-logo {
+  font-family: var(--font-main);
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--c1);
+  text-shadow: 0 0 12px var(--c1);
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-family: var(--font-main);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--c1);
+  text-shadow: 0 0 10px var(--c1);
+}
+
+/* Mobile hamburger toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--c1);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* ---------------------------
+   HERO SECTION
+--------------------------- */
+#hero {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 1.5rem 3rem;
+}
+
+.hero-badge {
+  font-family: var(--font-main);
+  font-size: 0.65rem;
+  letter-spacing: 4px;
+  color: var(--c2);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px var(--c2);
+}
+
+.hero-title {
+  font-family: var(--font-main);
+  font-weight: 900;
+  font-size: clamp(2rem, 7vw, 5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--c1), var(--c3), var(--c2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(0, 255, 231, 0.4));
+}
+
+.hero-sub {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  color: rgba(200, 230, 255, 0.7);
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+/* Hacker typing effect container */
+.typing-wrap {
+  font-family: 'Courier New', monospace;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: var(--c1);
+  text-shadow: 0 0 8px var(--c1);
+  margin-bottom: 2.5rem;
+  min-height: 1.5em;
+}
+
+.cursor {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* CTA button */
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 2.2rem;
+  font-family: var(--font-main);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--bg);
+  background: var(--c1);
+  border-radius: 4px;
+  box-shadow: 0 0 20px var(--c1), 0 0 40px rgba(0, 255, 231, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-cta:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 30px var(--c1), 0 0 60px rgba(0, 255, 231, 0.5);
+}
+
+/* Scroll indicator */
+.scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(200, 230, 255, 0.4);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+}
+
+.scroll-hint::after {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(var(--c1), transparent);
+  animation: scrollPulse 2s infinite;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 1; }
+}
+
+/* ---------------------------
+   GENERIC SECTION STYLES
+--------------------------- */
+section {
+  position: relative;
+  z-index: 1;
+  padding: 5rem 1.5rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-label {
+  font-family: var(--font-main);
+  font-size: 0.6rem;
+  letter-spacing: 5px;
+  color: var(--c2);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 0 8px var(--c2);
+}
+
+.section-title {
+  font-family: var(--font-main);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--c1), var(--c3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-line {
+  width: 80px;
+  height: 2px;
+  margin: 0.8rem auto 0;
+  background: linear-gradient(90deg, var(--c1), var(--c2));
+  box-shadow: 0 0 10px var(--c1);
+}
+
+/* ---------------------------
+   FOOTER
+--------------------------- */
+footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid rgba(0, 255, 231, 0.08);
+  font-family: var(--font-main);
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: rgba(200, 230, 255, 0.3);
+}
+
+/* ---------------------------
+   RESPONSIVE — MOBILE
+--------------------------- */
+@media (max-width: 768px) {
+  nav {
+    padding: 0.8rem 1.2rem;
+  }
+
+  /* Mobile nav drawer */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(5, 10, 20, 0.97);
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(0, 255, 231, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  section {
+    padding: 4rem 1rem;
+  }
+}
