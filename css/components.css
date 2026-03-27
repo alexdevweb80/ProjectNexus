@@ -177,6 +177,7 @@
 .tag-dash  { color: var(--c3);   border-color: var(--c3);   background: rgba(58, 123, 213, 0.08); }
 .tag-plan  { color: #ff9d4d;     border-color: #ff9d4d;     background: rgba(255, 157, 77, 0.08); }
 .tag-sec   { color: #7effa0;     border-color: #7effa0;     background: rgba(126, 255, 160, 0.08); }
+.tag-food  { color: #4dffb4;     border-color: #4dffb4;     background: rgba(77, 255, 180, 0.08); }
 
 .project-title {
   font-family: var(--font-main);
