@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 — NexusHack | Site en construction</title>
+  <meta name="description" content="Page introuvable — NexusHack est actuellement en construction."/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Base styles (variables, nav, footer, canvas) -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- 404-specific styles -->
+  <link rel="stylesheet" href="css/404.css"/>
+</head>
+<body>
+
+  <!-- ===== CANVAS BACKGROUND (Matrix rain) ===== -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===== CRT SCAN LINES OVERLAY ===== -->
+  <div class="scan-overlay" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="nav-logo">⬡ NEXUS<span style="color:var(--c2)">HACK</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html#hero">Accueil</a></li>
+      <li><a href="index.html#skills">Compétences</a></li>
+      <li><a href="index.html#projects">Projets</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== 404 CONTENT ===== -->
+  <main class="page-404">
+
+    <!-- Construction badge -->
+    <div class="construction-badge">
+      <span class="badge-dot"></span>
+      Site en construction
+    </div>
+
+    <!-- Glitch 404 -->
+    <div class="error-code" aria-label="Erreur 404">404</div>
+
+    <!-- Title -->
+    <h1 class="error-title">
+      Fichier <span>introuvable</span>
+    </h1>
+
+    <!-- Message -->
+    <p class="error-msg">
+      La page que vous cherchez n'existe pas ou a été déplacée.<br/>
+      Le site est actuellement en cours de déploiement.
+    </p>
+
+    <!-- Fake terminal output -->
+    <div class="terminal-block" aria-label="Journal système">
+      <div class="t-line"><span class="t-prompt">$</span> ping nexushack.dev</div>
+      <div class="t-line"><span class="t-prompt">></span> Résolution du nom d'hôte... <span class="t-ok">OK</span></div>
+      <div class="t-line"><span class="t-prompt">></span> Connexion au serveur... <span class="t-ok">OK</span></div>
+      <div class="t-line"><span class="t-prompt">></span> Ressource <code>/page</code> — statut <span class="t-err">404 NOT FOUND</span></div>
+      <div class="t-line"><span class="t-prompt">></span> <span id="t-cursor">Lancement imminent...</span></div>
+    </div>
+
+    <!-- Construction progress -->
+    <div class="construction-progress" aria-label="Avancement du site">
+      <div class="progress-label">
+        <span>// Avancement du site</span>
+        <span>67%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Action buttons -->
+    <div class="error-actions">
+      <a href="index.html" class="btn-primary">&#9654; Retour Accueil</a>
+      <a href="index.html#contact" class="btn-secondary">&#9993; Me contacter</a>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    &copy; 2026 NexusHack — Alexis Leroi &nbsp;|&nbsp; Tous droits réservés
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/404.js"></script>
+</body>
+</html>
