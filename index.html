@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NexusHack — Portfolio Cyberpunk</title>
-  <meta name="description" content="Portfolio cyberpunk & cybersécurité — Projets, compétences et contact."/>
+  <meta name="description" content="Portfolio cyberpunk & cybersécurité — Projets, compétences et contact." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet" />
 
   <!-- Base layout & global styles -->
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.css" />
   <!-- UI components: skills, projects, contact, toast -->
-  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/components.css" />
 </head>
+
 <body>
 
   <!-- ===== CANVAS BACKGROUND (Matrix rain — animated via background.js) ===== -->
@@ -57,36 +65,29 @@
       <div class="section-line"></div>
     </div>
     <div class="skills-grid">
-      <!-- data-w = target bar width in % (animated by ui.js IntersectionObserver) -->
       <div class="skill-card">
-        <div class="skill-icon">⚡</div>
+        <div class="skill-icon"><i data-lucide="code-2"></i></div>
         <div class="skill-name">HTML / CSS</div>
-        <div class="skill-level"><div class="skill-bar" data-w="95"></div></div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon">🔧</div>
+        <div class="skill-icon"><i data-lucide="braces"></i></div>
         <div class="skill-name">JavaScript</div>
-        <div class="skill-level"><div class="skill-bar" data-w="88"></div></div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon">🎨</div>
+        <div class="skill-icon"><i data-lucide="layout-template"></i></div>
         <div class="skill-name">UI / Design</div>
-        <div class="skill-level"><div class="skill-bar" data-w="82"></div></div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon">🔐</div>
+        <div class="skill-icon"><i data-lucide="shield-check"></i></div>
         <div class="skill-name">Cybersécurité</div>
-        <div class="skill-level"><div class="skill-bar" data-w="75"></div></div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon">🐧</div>
+        <div class="skill-icon"><i data-lucide="terminal"></i></div>
         <div class="skill-name">Linux / Shell</div>
-        <div class="skill-level"><div class="skill-bar" data-w="70"></div></div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon">🌐</div>
+        <div class="skill-icon"><i data-lucide="network"></i></div>
         <div class="skill-name">Réseaux</div>
-        <div class="skill-level"><div class="skill-bar" data-w="65"></div></div>
       </div>
     </div>
   </section>
@@ -108,8 +109,10 @@
         <div class="project-body">
           <span class="project-tag tag-cyber">Portfolio</span>
           <h3 class="project-title">Portfolio Personnel</h3>
-          <p class="project-desc">Interface de présentation complète — compétences, expériences et projets en mode terminal.</p>
-          <a href="https://alexdevweb80.github.io/alexdevweb80-alexis-leroi-portfolio-cv.github.io/" target="_blank" rel="noopener" class="project-link">Explorer →</a>
+          <p class="project-desc">Interface de présentation complète — compétences, expériences et projets en mode
+            terminal.</p>
+          <a href="https://alexdevweb80.github.io/alexdevweb80-alexis-leroi-portfolio-cv.github.io/" target="_blank"
+            rel="noopener" class="project-link">Explorer →</a>
         </div>
       </div>
 
@@ -121,7 +124,8 @@
         <div class="project-body">
           <span class="project-tag tag-hack">Cybersécurité</span>
           <h3 class="project-title">Forum KSEC-Cyber</h3>
-          <p class="project-desc">Plateforme communautaire dédiée à la cybersécurité — échanges, challenges et ressources CTF.</p>
+          <p class="project-desc">Plateforme communautaire dédiée à la cybersécurité — échanges, challenges et
+            ressources CTF.</p>
           <a href="404.html" target="_blank" rel="noopener" class="project-link">Explorer →</a>
         </div>
       </div>
@@ -134,8 +138,10 @@
         <div class="project-body">
           <span class="project-tag tag-dash">Dashboard</span>
           <h3 class="project-title">Dashboard THM</h3>
-          <p class="project-desc">Tableau de bord analytique pour TryHackMe — progression, stats et classements en temps réel.</p>
-          <a href="https://alexdevweb80.github.io/dashboardTHM/" target="_blank" rel="noopener" class="project-link">Explorer →</a>
+          <p class="project-desc">Tableau de bord analytique pour TryHackMe — progression, stats et classements en temps
+            réel.</p>
+          <a href="https://alexdevweb80.github.io/dashboardTHM/" target="_blank" rel="noopener"
+            class="project-link">Explorer →</a>
         </div>
       </div>
 
@@ -147,7 +153,8 @@
         <div class="project-body">
           <span class="project-tag tag-sec">Sécurité</span>
           <h3 class="project-title">KSEC-Cyber</h3>
-          <p class="project-desc">Site vitrine de l'entité KSEC — formation, pentest et expertise en cybersécurité offensive/défensive.</p>
+          <p class="project-desc">Site vitrine de l'entité KSEC — formation, pentest et expertise en cybersécurité
+            offensive/défensive.</p>
           <a href="https://ksec-cyber.fr/" target="_blank" rel="noopener" class="project-link">Explorer →</a>
         </div>
       </div>
@@ -160,8 +167,10 @@
         <div class="project-body">
           <span class="project-tag tag-plan">Planning</span>
           <h3 class="project-title">WEPLAN</h3>
-          <p class="project-desc">Application de planning collaboratif — organisation personnelle et partagée avec calendrier interactif.</p>
-          <a href="https://alexdevweb80.github.io/calendar/login.html" target="_blank" rel="noopener" class="project-link">Explorer →</a>
+          <p class="project-desc">Application de planning collaboratif — organisation personnelle et partagée avec
+            calendrier interactif.</p>
+          <a href="https://alexdevweb80.github.io/calendar/login.html" target="_blank" rel="noopener"
+            class="project-link">Explorer →</a>
         </div>
       </div>
 
@@ -173,8 +182,53 @@
         <div class="project-body">
           <span class="project-tag tag-food">Stock</span>
           <h3 class="project-title">Garde-Manger</h3>
-          <p class="project-desc">Application web de gestion des stocks alimentaires — suivi des quantités, alertes de rupture et liste de courses automatisée.</p>
-          <a href="https://alexdevweb80.github.io/Garde-Manger/" target="_blank" rel="noopener" class="project-link">Explorer →</a>
+          <p class="project-desc">Application web de gestion des stocks alimentaires — suivi des quantités, alertes de
+            rupture et liste de courses automatisée.</p>
+          <a href="https://alexdevweb80.github.io/Garde-Manger/" target="_blank" rel="noopener"
+            class="project-link">Explorer →</a>
+        </div>
+      </div>
+
+      <!-- ── F.A.Q ── -->
+      <div class="project-card">
+        <div class="project-art-wrap">
+          <img src="assets/projects/F.A.Q.png" alt="F.A.Q Illustration" class="project-img">
+        </div>
+        <div class="project-body">
+          <span class="project-tag tag-faq">F.A.Q</span>
+          <h3 class="project-title">F.A.Q</h3>
+          <p class="project-desc">Section de questions fréquentes — réponses aux interrogations courantes des
+            utilisateurs.</p>
+          <a href="https://alexdevweb80.github.io/FAQ/" target="_blank" rel="noopener" class="project-link">Explorer
+            →</a>
+        </div>
+      </div>
+
+      <!-- ── TechIt ── -->
+      <div class="project-card">
+        <div class="project-art-wrap">
+          <img src="assets/projects/TECH-IT.png" alt="TechIt Illustration" class="project-img">
+        </div>
+        <div class="project-body">
+          <span class="project-tag tag-techit">TechIt</span>
+          <h3 class="project-title">Technicien IT</h3>
+          <p class="project-desc">Site vitrine pour les services de technicien IT — présentation des compétences,
+            projets et contact.</p>
+          <a href="https://alexdevweb80.github.io/Technicien-IT-Dev-web/" target="_blank" rel="noopener"
+            class="project-link">Explorer →</a>
+        </div>
+      </div>
+
+      <!-- ── Fiverr ── -->
+      <div class="project-card">
+        <div class="project-art-wrap">
+          <img src="assets/projects/Fiverr.png" alt="Fiverr Illustration" class="project-img">
+        </div>
+        <div class="project-body">
+          <span class="project-tag tag-fiverr">Freelance</span>
+          <h3 class="project-title">Fiverr Portfolio</h3>
+          <p class="project-desc">Site vitrine pour les services de Fiverr — présentation des compétences, création de page web, logo, bannière, etc.</p>
+          <a href="https://alexdevweb80.github.io/Fiverr/" target="_blank" rel="noopener" class="project-link">Explorer →</a>
         </div>
       </div>
 
@@ -192,11 +246,11 @@
       <form class="contact-form" id="contact-form" novalidate>
         <div class="form-group">
           <label for="c-name">Identifiant</label>
-          <input type="text" id="c-name" placeholder="Votre nom..." autocomplete="off"/>
+          <input type="text" id="c-name" placeholder="Votre nom..." autocomplete="off" />
         </div>
         <div class="form-group">
           <label for="c-email">Adresse IP (Email)</label>
-          <input type="email" id="c-email" placeholder="email@domain.com" autocomplete="off"/>
+          <input type="email" id="c-email" placeholder="email@domain.com" autocomplete="off" />
         </div>
         <div class="form-group">
           <label for="c-msg">Message crypté</label>
@@ -222,6 +276,9 @@
   <script src="js/ui.js" defer></script>
   <!-- Contact form → Discord webhook -->
   <script src="js/contact.js" defer></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
 </body>
+
 </html>

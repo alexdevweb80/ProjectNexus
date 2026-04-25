@@ -45,32 +45,33 @@
 }
 
 .skill-icon {
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
+  color: var(--c1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-icon svg {
+  width: 42px;
+  height: 42px;
+  stroke-width: 1.5px;
+  filter: drop-shadow(0 0 8px var(--c1));
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.skill-card:hover .skill-icon svg {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 15px var(--c1));
 }
 
 .skill-name {
   font-family: var(--font-main);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 700;
   letter-spacing: 2px;
-  color: var(--c1);
-}
-
-/* Skill progress bar — animated width via JS */
-.skill-level {
-  margin-top: 0.8rem;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.skill-bar {
-  height: 100%;
-  border-radius: 3px;
-  background: linear-gradient(90deg, var(--c1), var(--c3));
-  width: 0;
-  transition: width 1.2s ease;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 /* ---------------------------
@@ -178,6 +179,9 @@
 .tag-plan  { color: #ff9d4d;     border-color: #ff9d4d;     background: rgba(255, 157, 77, 0.08); }
 .tag-sec   { color: #7effa0;     border-color: #7effa0;     background: rgba(126, 255, 160, 0.08); }
 .tag-food  { color: #4dffb4;     border-color: #4dffb4;     background: rgba(77, 255, 180, 0.08); }
+.tag-faq   { color: #ffd24d;     border-color: #ffd24d;     background: rgba(255, 210, 77, 0.08); }
+.tag-techit { color: #7ec8ff;    border-color: #7ec8ff;    background: rgba(126, 200, 255, 0.08); }
+.tag-fiverr { color: #1dbf73;    border-color: #1dbf73;    background: rgba(29, 191, 115, 0.08); }
 
 .project-title {
   font-family: var(--font-main);

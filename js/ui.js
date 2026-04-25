@@ -11,6 +11,16 @@
 
 
 /* ================================================================
+   0. INITIALIZATION
+   ================================================================ */
+window.addEventListener('DOMContentLoaded', () => {
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+});
+
+
+/* ================================================================
    1. MOBILE NAV TOGGLE
    ================================================================ */
 (function () {
@@ -92,12 +102,6 @@
 
         const el = entry.target;
         el.classList.add('visible');
-
-        // Animate skill bar width if present
-        const bar = el.querySelector('.skill-bar');
-        if (bar) {
-          bar.style.width = bar.dataset.w + '%';
-        }
       });
     },
     { threshold: 0.15 }
