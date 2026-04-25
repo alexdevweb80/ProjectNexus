@@ -1,0 +1,320 @@
+/* ================================================================
+   404.css — Page 404 / Site en construction
+   NexusHack Portfolio | Cyberpunk Theme
+   ================================================================ */
+
+/* ---------------------------
+   404 MAIN WRAPPER
+--------------------------- */
+.page-404 {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 1.5rem 3rem;
+  gap: 0;
+}
+
+/* ---------------------------
+   GLITCH NUMBER
+--------------------------- */
+.error-code {
+  font-family: var(--font-main);
+  font-weight: 900;
+  font-size: clamp(6rem, 20vw, 14rem);
+  line-height: 1;
+  color: var(--c1);
+  text-shadow:
+    0 0 20px var(--c1),
+    0 0 60px rgba(0, 255, 231, 0.4);
+  position: relative;
+  display: inline-block;
+  animation: glitch-main 4s infinite;
+  letter-spacing: -4px;
+}
+
+.error-code::before,
+.error-code::after {
+  content: '404';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.error-code::before {
+  color: var(--c2);
+  text-shadow: 0 0 20px var(--c2);
+  animation: glitch-before 4s infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+}
+
+.error-code::after {
+  color: var(--c3);
+  text-shadow: 0 0 20px var(--c3);
+  animation: glitch-after 4s infinite;
+  clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+}
+
+@keyframes glitch-main {
+  0%, 90%, 100%  { transform: translate(0); filter: none; }
+  91%            { transform: translate(-3px, 1px); filter: hue-rotate(90deg); }
+  93%            { transform: translate(3px, -1px); }
+  95%            { transform: translate(-2px, 2px); filter: hue-rotate(-90deg); }
+  97%            { transform: translate(2px, -2px); }
+}
+
+@keyframes glitch-before {
+  0%, 89%, 100%  { transform: translate(0); opacity: 0; }
+  90%            { transform: translate(-4px, 0); opacity: 0.8; }
+  92%            { transform: translate(4px, 0); opacity: 0.8; }
+  94%            { transform: translate(-2px, 1px); opacity: 0.6; }
+  96%            { transform: translate(0); opacity: 0; }
+}
+
+@keyframes glitch-after {
+  0%, 89%, 100%  { transform: translate(0); opacity: 0; }
+  90%            { transform: translate(4px, 0); opacity: 0.7; }
+  92%            { transform: translate(-4px, 0); opacity: 0.7; }
+  94%            { transform: translate(2px, -1px); opacity: 0.5; }
+  96%            { transform: translate(0); opacity: 0; }
+}
+
+/* ---------------------------
+   UNDER CONSTRUCTION BADGE
+--------------------------- */
+.construction-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-main);
+  font-size: 0.6rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--c2);
+  text-shadow: 0 0 8px var(--c2);
+  border: 1px solid rgba(255, 0, 200, 0.3);
+  background: rgba(255, 0, 200, 0.05);
+  padding: 0.4rem 1.2rem;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+  animation: badgePulse 2.5s ease-in-out infinite;
+}
+
+.construction-badge .badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--c2);
+  box-shadow: 0 0 8px var(--c2);
+  animation: dotBlink 1s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+  0%, 100% { box-shadow: 0 0 0px rgba(255, 0, 200, 0); }
+  50%      { box-shadow: 0 0 16px rgba(255, 0, 200, 0.3); }
+}
+
+@keyframes dotBlink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.2; }
+}
+
+/* ---------------------------
+   ERROR TITLE & MESSAGE
+--------------------------- */
+.error-title {
+  font-family: var(--font-main);
+  font-size: clamp(1rem, 3vw, 1.6rem);
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.error-title span {
+  color: var(--c1);
+  text-shadow: 0 0 10px var(--c1);
+}
+
+.error-msg {
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: rgba(200, 230, 255, 0.6);
+  max-width: 520px;
+  margin: 0 auto 0.8rem;
+  line-height: 1.8;
+}
+
+/* ---------------------------
+   TERMINAL BLOCK
+--------------------------- */
+.terminal-block {
+  background: rgba(0, 255, 231, 0.03);
+  border: 1px solid rgba(0, 255, 231, 0.15);
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem auto 2rem;
+  max-width: 480px;
+  width: 100%;
+  text-align: left;
+  font-family: 'Courier New', monospace;
+  font-size: 0.82rem;
+  color: var(--c1);
+}
+
+.terminal-block .t-line {
+  margin-bottom: 0.35rem;
+  opacity: 0;
+  animation: fadeInLine 0.4s forwards;
+}
+
+.terminal-block .t-line:nth-child(1) { animation-delay: 0.3s; }
+.terminal-block .t-line:nth-child(2) { animation-delay: 0.9s; }
+.terminal-block .t-line:nth-child(3) { animation-delay: 1.5s; }
+.terminal-block .t-line:nth-child(4) { animation-delay: 2.1s; }
+.terminal-block .t-line:nth-child(5) { animation-delay: 2.7s; color: var(--c2); }
+
+.terminal-block .t-prompt { color: var(--c2); margin-right: 0.4rem; }
+.terminal-block .t-ok     { color: #00ff88; }
+.terminal-block .t-err    { color: #ff4060; }
+
+@keyframes fadeInLine {
+  from { opacity: 0; transform: translateX(-8px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ---------------------------
+   PROGRESS BAR (construction)
+--------------------------- */
+.construction-progress {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 2.5rem;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-main);
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: rgba(200, 230, 255, 0.5);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.progress-track {
+  width: 100%;
+  height: 4px;
+  background: rgba(200, 230, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--c3), var(--c1));
+  box-shadow: 0 0 10px var(--c1);
+  border-radius: 4px;
+  animation: loadProgress 2.5s ease-out 1s forwards;
+}
+
+@keyframes loadProgress {
+  from { width: 0%; }
+  to   { width: 67%; }
+}
+
+/* ---------------------------
+   ACTION BUTTONS
+--------------------------- */
+.error-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  font-family: var(--font-main);
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--bg);
+  background: var(--c1);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 20px var(--c1), 0 0 40px rgba(0, 255, 231, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 30px var(--c1), 0 0 60px rgba(0, 255, 231, 0.4);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  font-family: var(--font-main);
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--c2);
+  background: transparent;
+  border: 1px solid rgba(255, 0, 200, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-3px) scale(1.05);
+  border-color: var(--c2);
+  background: rgba(255, 0, 200, 0.07);
+  box-shadow: 0 0 20px rgba(255, 0, 200, 0.3);
+}
+
+/* ---------------------------
+   SCAN LINE OVERLAY
+--------------------------- */
+.scan-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 255, 231, 0.012) 2px,
+    rgba(0, 255, 231, 0.012) 4px
+  );
+}
+
+/* ---------------------------
+   RESPONSIVE
+--------------------------- */
+@media (max-width: 600px) {
+  .error-code { letter-spacing: -2px; }
+  .error-actions { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-secondary { width: 100%; max-width: 280px; justify-content: center; }
+  .terminal-block { font-size: 0.75rem; }
+}
